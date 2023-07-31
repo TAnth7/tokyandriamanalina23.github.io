@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        
+        <link rel="stylesheet" href="style.css">
+
+        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+          </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+        <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+        <script type="importmap">
+        {
+          "imports": {
+          "three": "https://unpkg.com/three@0.150.1/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.150.1/examples/jsm/"
+                     }
+        }
+        </script>
+
+    </head>
+
+
+    <body>
+
+    <nav>
+        <ul id ='header_links'>
+        <li> <a href="workshops.html"> WORKSHOPS</a>  </li>
+        <li> <a href="index.html"> HOME </a> </li>
+        </ul>
+
+        <h1 id="title_he"> Toky Andriamanalina </h1>
+    </nav>
+
+    <title> Toky Andriamanalina</title>
+
+       
+<br><br><br>
+
+<div class='container'>
+    <div class='picture'>
+        <img src="images/photo.jpg" id='my_profile_img' width='600px'>
+    </div>
+
+    <div class='details'>
+    <h1>👋 Toky, a mathematician.</h1>
+
+    <br><br>
+        <ul>
+            <li><strong>Name :</strong> Toky Andriamanalina </li>
+
+            <li><strong>Email :</strong> toky.andriamanalina[at]uni-potsdam.de </li>
+
+            <li><strong>Linkedin :</strong> <a class='links' href="https://www.linkedin.com/in/toky-andriamanalina-841b4a280/">Toky Andriamanalina</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container">
+    <div class="description_text">
+       I am Toky, a Malagasy PhD student at the University of Potsdam (Germany), under the supervision of <a class='links' href="https://www.math.uni-potsdam.de/professuren/applied-geometry-and-topology/team/prof-dr-myfanwy-evans/">Prof. Dr. Myfanwy Evans</a> and <!--<a class='links' href="https://www.wpi-aimr.tohoku.ac.jp/mathematics_unit/english/member/member_sonia.html"> -->Dr. Sonia Mahmoudi <!--</a> -->, in the team of Applied Geometry and Topology.
+       I completed my Bachelor's and <a class='links' href="https://mathinfo.unistra.fr/en/courses/mpa-mathematics-magisterium/mathematics-magisterium">Magisterium</a> at the university of Strasbourg (France), and my Master's at
+       the University of Rennes 1 (France).
+
+       <br><br>
+       My PhD project is about the topological and geometrical study of triply periodic knotted structures (see and play with the 3D model). I use <a class='links' href="https://www.sidefx.com/products/houdini/">Houdini</a> to visualise such structures, and
+       use mathematical tools that stem from Knot theory to understand the entanglement.  
+
+       <br><br>
+       I am interested in using mathematics to understand biological and molecular structures, or any other object presenting physical properties driven by its topological or geometrical features.
+       Here I give a non-exhaustive list of my interests: pure/applied topology, geometry, knot theory, weavings, knittings, algebra, crystallography, biology, physics, chemistry, 3D animation and visualisation.
+
+       <br><br>
+       Skills: 
+       <ul class='listing_in_text'>
+        <li>Languages: Malagasy (mother tongue), French (fluent), English (Excellent command), German (basic communication skills).</li>
+        <li>Programming/Coding, IT skills: Python, \( \LaTeX \), html, php, css, javascript, Houdini. </li>
+       </ul>
+    </div>
+
+    <canvas id="rot_mod"> This is for our rotating model</canvas>
+
+        <script type="module">
+         import * as THREE from 'three';
+         import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+         import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+       
+           let hlight,directionalLight,scene,camera,renderer,loader,controls;
+
+           function init(){
+               scene = new THREE.Scene();
+               scene.background = new THREE.Color("white");
+
+               var ratio_w_h = window.innerWidth/window.innerHeight;
+               var new_width = 2*ratio_w_h ; // change the number here to have the object closer or further
+               var new_height = new_width/ratio_w_h;
+               
+               camera = new THREE.OrthographicCamera(new_width / - 2, new_width / 2, new_height / 2,  new_height / - 2, 1, 5000 );
+
+               camera.position.z = 4;
+
+
+               const intensity = 2;
+                const skyColor = 0xB1E1FF;  // light blue
+                const groundColor = 0xB97A20;  // brownish orange
+                const light = new THREE.HemisphereLight(skyColor, groundColor, intensity);
+                scene.add(light);
+
+                directionalLight = new THREE.DirectionalLight(0xB1E1FF,0.75);
+                directionalLight.position.set(-1,1,1);
+                //scene.add(directionalLight);
+
+               renderer = new THREE.WebGLRenderer( { canvas: rot_mod, antialias: true } );
+               renderer.setSize( window.innerWidth/2, window.innerHeight/2); // Here is where you get the size of the box.
+               //document.body.appendChild( renderer.domElement );
+
+               controls = new OrbitControls(camera, renderer.domElement);
+               controls.addEventListener('change', renderer);
+               controls.autoRotate = true;
+               
+               console.log(OBJLoader);
+               loader = new OBJLoader();
+               // in the next line, I upload the object itself by using the variable which will be defined in the structure page.
+               loader.load("model.obj", function(root) {
+                   console.log(root)
+                   scene.add(root);
+                   animate()
+               });				
+               
+           }
+
+
+           function animate(){
+               renderer.render( scene, camera );
+               requestAnimationFrame(animate);
+               controls.update();
+           }
+
+
+           init();
+       </script>
+</div>
+
+
+    </body>
+</html>
