@@ -58,6 +58,21 @@ nav {
     list-style: none;
 }
 
+/* News */
+#news_box{
+    width: 400px;
+    height: fit-content;
+    padding: 20px;
+    border: #00A064;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+.news_link{
+    text-decoration: none;
+    color: #3D3DC2;
+}
+
 /* description text and rotating model */
 
 .description_text {
@@ -83,5 +98,5 @@ nav {
 
   .workshop_link{
     text-decoration: none;
-    color: #3FC283;
+    color: #3D3DC2;
   }
