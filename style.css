@@ -14,7 +14,7 @@ nav {
     top: 0;
     width: 100% ;
     height: 60px;
-    background-color: #00A064 ;
+    background-color: 	#000000 ;
 }
 
 #title_he {
@@ -38,7 +38,6 @@ nav {
 }
 
 /* container */
-
 .container {
     width: 100%;
     display: flex;
@@ -46,10 +45,9 @@ nav {
 }
 
 /* welcome */
-
 .links {
     text-decoration: none;
-    color: #3FC283;
+    color: #2d66f1;
 }
 
 .details ul li {
@@ -63,14 +61,14 @@ nav {
     width: 400px;
     height: fit-content;
     padding: 20px;
-    border: #3FC283;
+    border: #72757d;
     border-radius: 20px;
     border-style: solid;
 }
 
 .news_link{
     text-decoration: none;
-    color: #3D3DC2;
+    color: 	#2d66f1;
 }
 
 /* description text and rotating model */
@@ -98,5 +96,5 @@ nav {
 
   .workshop_link{
     text-decoration: none;
-    color: #3D3DC2;
+    color: 	#2d66f1;
   }

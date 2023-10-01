@@ -126,8 +126,8 @@
                 const light = new THREE.HemisphereLight(skyColor, groundColor, intensity);
                 scene.add(light);
 
-                directionalLight = new THREE.DirectionalLight(0xB1E1FF,0.75);
-                directionalLight.position.set(-1,1,1);
+                directionalLight = new THREE.DirectionalLight(0xB1E1FF,0.85);
+                directionalLight.position.set(-1,2,1);
                 //scene.add(directionalLight);
 
                renderer = new THREE.WebGLRenderer( { canvas: rot_mod, antialias: true } );
