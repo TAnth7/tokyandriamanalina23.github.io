@@ -45,6 +45,8 @@
        
 <br><br><br>
 
+<div class="wrapper">
+
 <div class='container'>
     <div class='picture'>
         <img src="images/photo.jpg" id='my_profile_img' width='600px'>
@@ -97,8 +99,10 @@
        <a class="news_link" href="https://sites.google.com/view/bbworkshopiionknots/home">Berlin-Brandenburg Workshop II: Knot Theory and its Application.</a>
        </div>
     </div>
+</div>
 
-    <canvas id="rot_mod"> This is for our rotating model</canvas>
+<div class="container_rot_mod">
+<canvas id="rot_mod"> This is for our rotating model</canvas>
 
         <script type="module">
          import * as THREE from 'three';
@@ -120,7 +124,7 @@
                camera.position.z = 4;
 
 
-               const intensity = 2;
+               const intensity = 1.85;
                 const skyColor = 0xB1E1FF;  // light blue
                 const groundColor = 0xB97A20;  // brownish orange
                 const light = new THREE.HemisphereLight(skyColor, groundColor, intensity);
@@ -131,7 +135,7 @@
                 //scene.add(directionalLight);
 
                renderer = new THREE.WebGLRenderer( { canvas: rot_mod, antialias: true } );
-               renderer.setSize( window.innerWidth/2, window.innerHeight/2); // Here is where you get the size of the box.
+               renderer.setSize( window.innerWidth/1.25, window.innerHeight/1.25); // Here is where you get the size of the box.
                //document.body.appendChild( renderer.domElement );
 
                controls = new OrbitControls(camera, renderer.domElement);
@@ -161,6 +165,6 @@
        </script>
 </div>
 
-
+</div>
     </body>
 </html>
