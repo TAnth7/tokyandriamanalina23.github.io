@@ -127,7 +127,7 @@ nav {
   @media only screen and (max-width: 600px) {
     /* navigation bar */
     nav {
-        width: 600px; /* I don't know why is it not taking the whole 600px when i set the width to 100% */
+        width: 600px; /* I don't know why is it not taking the whole 600px when I set the width to 100% */
     }
 
 
@@ -169,3 +169,52 @@ nav {
         padding: 10px;
     }
   }
+
+
+  /* Tablet version */
+  @media only screen and (min-width: 601px) and (max-width: 1023px) {
+    /* navigation bar */
+    nav {
+        width: 1023px; /* I don't know why is it not taking the whole 1023px when I set the width to 100% */
+    }
+
+
+    .wrapper {
+        width: 80%;
+    }
+
+    /* container */
+    .container {
+        width: 80%;
+        display: block;
+    }
+
+    /* welcome */
+     .details {
+        width: 1000px;
+        padding: 10px;
+     }
+
+    /* description text */
+    .description_text {
+        width: 1000px;
+        padding: 10px;
+    }
+
+    .listing_in_text {
+        padding: 0 0 0 30px;
+    }
+
+    /* 3D model */
+    .container_rot_mod {
+        width: 1000px;
+    }
+
+    /* table for workshops*/
+    .table_workshop {
+        border-collapse: collapse;
+        width: 1023px;
+        padding: 10px;
+    }
+  }
+  
