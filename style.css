@@ -7,6 +7,7 @@
 html, body {
     background-color: white;
     height: 100%;
+    position: relative;
 }
 
 /* navigation bar */
@@ -15,6 +16,8 @@ nav {
     width: 100% ;
     height: 60px;
     background-color: 	#000000 ;
+    position: sticky;
+    z-index: 100000;
 }
 
 #title_he {
