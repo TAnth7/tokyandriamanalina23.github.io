@@ -121,16 +121,13 @@ nav {
 
   /* Responsive website */
 
+  /* normally, things should work porperly when i set the width to 100%. However, it doesn't work. Therefore, I have to set the width manually every time */
+
   /* mobile version */
   @media only screen and (max-width: 600px) {
     /* navigation bar */
     nav {
-        top: 0;
         width: 600px; /* I don't know why is it not taking the whole 600px when i set the width to 100% */
-        height: 60px;
-        background-color: 	#000000 ;
-        position: sticky;
-        z-index: 100000;
     }
 
 
