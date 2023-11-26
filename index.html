@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, intial-scale=1">
         
-        <link rel="stylesheet" href="style.css?empty_cache=2">
+        <link rel="stylesheet" href="style.css?empty_cache=1">
 
         
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -105,6 +105,7 @@
          import * as THREE from 'three';
          import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
          import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+
        
            let hlight,directionalLight,scene,camera,renderer,loader,controls;
 
@@ -112,8 +113,17 @@
                scene = new THREE.Scene();
                scene.background = new THREE.Color("white");
 
+               var ratio_extension; //here is to make the size of the object responsive
+               if (window.innerWidth <= 600) {
+                    ratio_extension = 5;
+                } else if (window.innerWidth > 600 && window.innerWidth <= 1300) {
+                    ratio_extension = 3.5;
+                } else {
+                    ratio_extension = 2;
+                }
+
                var ratio_w_h = window.innerWidth/window.innerHeight;
-               var new_width = 2*ratio_w_h ; // change the number here to have the object closer or further
+               var new_width = ratio_extension*ratio_w_h ; // change the ratio_extension here to have the object closer or further
                var new_height = new_width/ratio_w_h;
                
                camera = new THREE.OrthographicCamera(new_width / - 2, new_width / 2, new_height / 2,  new_height / - 2, 1, 5000 );
