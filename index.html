@@ -147,13 +147,13 @@
                controls = new OrbitControls(camera, renderer.domElement);
                controls.addEventListener('change', renderer);
                controls.autoRotate = true;
-               controls.autoRotateSpeed = 0.5; // Adjust the value of the speed of rotation as needed
+               controls.autoRotateSpeed = 0.75; // Adjust the value of the speed of rotation as needed
 
                
                console.log(OBJLoader);
                loader = new OBJLoader();
                // in the next line, I upload the object itself by using the variable which will be defined in the structure page.
-               loader.load("model.obj?empty_cache=1", function(root) {
+               loader.load("model.obj?empty_cache=2", function(root) {
                    console.log(root)
                    scene.add(root);
                    animate()
