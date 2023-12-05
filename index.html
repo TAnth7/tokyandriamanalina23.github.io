@@ -143,11 +143,12 @@
 
                renderer = new THREE.WebGLRenderer( { canvas: rot_mod, antialias: true } );
                renderer.setSize( window.innerWidth/1.25, window.innerHeight/1.25); // Here is where you get the size of the box.
-               //document.body.appendChild( renderer.domElement );
 
                controls = new OrbitControls(camera, renderer.domElement);
                controls.addEventListener('change', renderer);
                controls.autoRotate = true;
+               controls.autoRotateSpeed = 0.5; // Adjust the value of the speed of rotation as needed
+
                
                console.log(OBJLoader);
                loader = new OBJLoader();
