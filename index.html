@@ -115,11 +115,11 @@
 
                var ratio_extension; //here is to make the size of the object responsive
                if (window.innerWidth <= 600) {
-                    ratio_extension = 5;
+                    ratio_extension = 6.25;
                 } else if (window.innerWidth > 600 && window.innerWidth <= 1300) {
-                    ratio_extension = 3.5;
+                    ratio_extension = 4.375;
                 } else {
-                    ratio_extension = 2;
+                    ratio_extension = 2.5;
                 }
 
                var ratio_w_h = window.innerWidth/window.innerHeight;
@@ -131,15 +131,15 @@
                camera.position.z = 4;
 
 
-               const intensity = 1.85;
+               const intensity = 2;
                 const skyColor = 0xB1E1FF;  // light blue
                 const groundColor = 0xB97A20;  // brownish orange
                 const light = new THREE.HemisphereLight(skyColor, groundColor, intensity);
                 scene.add(light);
 
-                directionalLight = new THREE.DirectionalLight(0xB1E1FF,0.85);
-                directionalLight.position.set(-1,2,1);
-                //scene.add(directionalLight);
+                directionalLight = new THREE.DirectionalLight(0xB1E1FF,0.75);
+                directionalLight.position.set(-1,1,1);
+                scene.add(directionalLight);
 
                renderer = new THREE.WebGLRenderer( { canvas: rot_mod, antialias: true } );
                renderer.setSize( window.innerWidth/1.25, window.innerHeight/1.25); // Here is where you get the size of the box.
