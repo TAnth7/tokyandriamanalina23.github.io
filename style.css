@@ -98,7 +98,16 @@ nav {
     padding: 15px;
 }
 
-/* table for workshops*/
+/* Research page*/
+.h3_title {
+    padding: 0 0 0 30px;
+}
+
+
+#list_of_papers {
+    padding: 0 0 0 60px;
+}
+
 .table_workshop {
     border-collapse: collapse;
     width: 90%;
@@ -110,7 +119,7 @@ nav {
     padding: 8px;
   }
 
-  .workshop_link{
+  .research_link{
     text-decoration: none;
     color: 	#2d66f1;
   }
