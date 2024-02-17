@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, intial-scale=1">
         
-        <link rel="stylesheet" href="style.css?empty_cache=1">
+        <link rel="stylesheet" href="style.css?empty_cache=2">
 
         
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -31,7 +30,7 @@
 
 <body>
 
-<div class="wrapper">
+<div class="wrapper"> <!--  The wrapper is used to make the side bar floating over the contents of the page -->
 
     <nav>
         <div id="btn-toggle-nav" onclick="toggleNav()"></div>
@@ -48,7 +47,7 @@
 
     <title> Home </title>
 
-    <br><br>
+    <br><br><br><br><br>
 
     <div class='container'>
         <div class='picture'>
@@ -161,7 +160,7 @@
                 console.log(OBJLoader);
                 loader = new OBJLoader();
                 // in the next line, I upload the object itself by using the variable which will be defined in the structure page.
-                loader.load("model.obj?empty_cache=1", function(root) {
+                loader.load("model.obj?empty_cache=2", function(root) {
                     console.log(root)
                     scene.add(root);
                     animate()
