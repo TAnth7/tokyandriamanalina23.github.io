@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, intial-scale=1">
         
-        <link rel="stylesheet" href="style.css?empty_cache=2">
+        <link rel="stylesheet" href="style.css?empty_cache=1">
 
         
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -136,14 +136,14 @@
                 camera.position.z = 4;
 
 
-                const intensity = 2;
+                const intensity = 1.75;
                     const skyColor = 0xB1E1FF;  // light blue
                     const groundColor = 0xB97A20;  // brownish orange
                     const light = new THREE.HemisphereLight(skyColor, groundColor, intensity);
                     scene.add(light);
 
                     directionalLight = new THREE.DirectionalLight(0xB1E1FF,0.75);
-                    directionalLight.position.set(-1,1,1);
+                    directionalLight.position.set(1,1,1);
                     scene.add(directionalLight);
 
                 renderer = new THREE.WebGLRenderer( { canvas: rot_mod, antialias: true } );
