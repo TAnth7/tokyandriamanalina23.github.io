@@ -224,18 +224,18 @@ nav {
 
     /* welcome */
     .details {
-        width: 570px;
-        padding: 10px;
+        width: 590px;
+        padding: 20px;
      }
 
     .picture {
-    padding-right: 8px;
+    padding-right: 20px;
     }
 
     /* description text */
     .description_text {
-        width: 570px;
-        padding: 10px;
+        width: 590px;
+        padding: 20px;
     }
 
     .listing_in_text {
