@@ -224,7 +224,7 @@ nav {
 
     /* welcome */
     .details {
-        width: 590px;
+        width: 570px;
         padding: 20px;
      }
 
@@ -234,7 +234,7 @@ nav {
 
     /* description text */
     .description_text {
-        width: 590px;
+        width: 570px;
         padding: 20px;
     }
 
@@ -245,6 +245,12 @@ nav {
     /* 3D model */
     .container_rot_mod {
         width: 600px;
+    }
+
+    /* Research page*/
+    #list_of_papers {
+        width: 570px;
+        padding: 0 0 0 10%;
     }
 
     /* table for workshops*/
