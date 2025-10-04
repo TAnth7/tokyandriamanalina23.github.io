@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    
+    <link rel="stylesheet" href="style.css">
         
-        <link rel="stylesheet" href="style.css">
+    <!-- Latex and MathJax settings -->
+    <script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 
-        
+    <!-- Three.js settings -->
+
+    <!-- Optional: Only needed if you want older browser support -->
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-        
-        <script id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-          </script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
-        <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <!-- ES Module Shims for import maps -->
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
 
-        <script type="importmap">
-        {
-          "imports": {
-          "three": "https://unpkg.com/three@0.150.1/build/three.module.js",
-          "three/addons/": "https://unpkg.com/three@0.150.1/examples/jsm/"
-                     }
+    <!-- Import map for Three.js modules -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.151.3/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/"
         }
-        </script>
+    }
+    </script>
 
 </head>
 

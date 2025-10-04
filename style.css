@@ -104,8 +104,7 @@ nav {
 .container_details_and_picture {
     width: 100%;
     display: flex;
-    padding-left: 10%; /* small left offset; adjust as needed; same as description text */
-    gap: 30%;
+    justify-content: space-between;
 }
 
 /* welcome */
@@ -114,9 +113,18 @@ nav {
     color: #2d66f1;
 }
 
+/* The next two are for the details and picture, again */
+.details {
+    padding-left: 10%;
+}
+
+.picture {
+    padding-right: 15%;
+}
+
 .details ul li {
     text-decoration: none;
-    padding: 0 20px 0 0;
+    padding: 0 5% 0 0;
     list-style: none;
 }
 
@@ -141,7 +149,7 @@ nav {
 }
 
 .listing_in_text {
-    padding: 0 0 0 30px;
+    padding: 0 0 0 5%;
 }
 
 /* 3D model */
@@ -161,7 +169,7 @@ nav {
 
 
 #list_of_papers {
-    padding: 0 0 0 60px;
+    padding: 0 0 0 10%;
 }
 
 #table_workshop_course {
@@ -194,21 +202,10 @@ nav {
 }
 
 
-
-
-
-
-  /* Responsive website */
-
-  /* normally, things should work porperly when i set the width to 100%. However, it doesn't work. Therefore, I have to set the width manually every time */
+/* Responsive website */
 
   /* mobile version */
   @media only screen and (max-width: 600px) {
-    /* navigation bar */
-    nav {
-        width: 600px; /* I don't know why is it not taking the whole 600px when I set the width to 100% */
-    }
-
 
     .wrapper {
         width: 80%;
@@ -220,11 +217,20 @@ nav {
         display: block;
     }
 
+    .container_details_and_picture {
+    width: 590px;
+    display: flex;
+    }
+
     /* welcome */
-     .details {
+    .details {
         width: 570px;
         padding: 10px;
      }
+
+    .picture {
+    padding-right: 8px;
+    }
 
     /* description text */
     .description_text {
@@ -250,50 +256,4 @@ nav {
   }
 
 
-  /* Tablet version */
-  @media only screen and (min-width: 601px) and (max-width: 1023px) {
-    /* navigation bar */
-    nav {
-        width: 1023px; /* I don't know why is it not taking the whole 1023px when I set the width to 100% */
-    }
-
-
-    .wrapper {
-        width: 80%;
-    }
-
-    /* containers */
-    .container {
-        width: 80%;
-        display: block;
-    }
-
-    /* welcome */
-     .details {
-        width: 1000px;
-        padding: 10px;
-     }
-
-    /* description text */
-    .description_text {
-        width: 1000px;
-        padding: 10px;
-    }
-
-    .listing_in_text {
-        padding: 0 0 0 30px;
-    }
-
-    /* 3D model */
-    .container_rot_mod {
-        width: 1000px;
-    }
-
-    /* table for workshops*/
-    #table_workshop_course {
-        border-collapse: collapse;
-        width: 1023px;
-        padding: 10px;
-    }
-  }
   
