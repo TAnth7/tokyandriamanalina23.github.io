@@ -1,13 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     background-color: white;
     height: 100%;
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* wrapper */
@@ -87,18 +87,25 @@ nav {
     line-height: 60px; /* This should be the same as the height of the header*/
     white-space: nowrap;
     opacity: 0;
-    transition: all  0.3s ease-in-out;
+    transition: all  0.1s ease-in-out;
 }
 
 .nav-sidebar ul li a:hover {
     background-color: #2e2e2e;
 }
 
-/* container */
+/* containers */
 .container {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+
+.container_details_and_picture {
+    width: 100%;
+    display: flex;
+    padding-left: 10%; /* small left offset; adjust as needed; same as description text */
+    gap: 30%;
 }
 
 /* welcome */
@@ -130,7 +137,7 @@ nav {
 
 /* description text */
 .description_text {
-    padding: 100px;
+    padding: 10%;
 }
 
 .listing_in_text {
@@ -207,7 +214,7 @@ nav {
         width: 80%;
     }
 
-    /* container */
+    /* containers */
     .container {
         width: 80%;
         display: block;
@@ -255,7 +262,7 @@ nav {
         width: 80%;
     }
 
-    /* container */
+    /* containers */
     .container {
         width: 80%;
         display: block;

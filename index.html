@@ -49,25 +49,25 @@
 
     <br><br><br><br><br>
 
-    <div class='container'>
-        <div class='picture'>
-            <img src="images/photo.jpg" id='my_profile_img' width='600px'>
-        </div>
-
+    <div class='container_details_and_picture'>
         <div class='details'>
         <h1>👋 Toky, a mathematician.</h1>
 
         <br><br>
             <ul>
-                <li><strong>Email :</strong> andriamana[at]uni-potsdam.de </li>
+                <li><strong>Email:</strong> andriamana[at]uni-potsdam.de </li>
 
-                <li><strong>Linkedin :</strong> <a class='links' href="https://www.linkedin.com/in/toky-andriamanalina-841b4a280/">Toky Andriamanalina</a></li>
+                <li><strong>Linkedin:</strong> <a class='links' href="https://www.linkedin.com/in/toky-andriamanalina-841b4a280/">Toky Andriamanalina</a></li>
             </ul>
 
             <br> 
             QR code to share this website easily:
             <br>
             <img src="images/qrcode_this_site.png" width="150px" >
+        </div>
+
+        <div class='picture'>
+            <img src="images/photo.jpg" id='my_profile_img' width='200px'>
         </div>
     </div>
 
@@ -99,7 +99,7 @@
 
         <br><br>
         Skills:
-        <ul class='listing_in_text'> <li><strong>Languages:</strong> Malagasy (mother tongue), French (fluent), English (excellent command), German (basic communication skills).</li> <li><strong>Programming & computational skills:</strong> Python, <span style="font-family:serif;">\(\LaTeX\)</span>, HTML, PHP, CSS, SQL.</li> <li><strong>Software & tools:</strong> Houdini (procedural generation & 3D animation).</li> </ul>
+        <ul class='listing_in_text'> <li><strong>Languages:</strong> Malagasy (mother tongue), French (fluent), English (excellent command), German (basic communication skills).</li> <li><strong>Programming & computational skills:</strong> <span style="font-family:serif;">\(\LaTeX\)</span>, Python, HTML, CSS, PHP, SQL.</li> <li><strong>Software & tools:</strong> Houdini (procedural generation & 3D animation).</li> </ul>
         </ul>
 
         <!-- <br><br>
@@ -158,7 +158,6 @@
                 renderer.setSize( window.innerWidth/1.25, window.innerHeight/1.25); // Here is where you get the size of the box.
 
                 controls = new OrbitControls(camera, renderer.domElement);
-                controls.addEventListener('change', renderer);
                 controls.autoRotate = true;
                 controls.autoRotateSpeed = 0.75; // Adjust the value of the speed of rotation as needed
 
