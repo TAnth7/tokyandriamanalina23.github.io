@@ -143,7 +143,7 @@
                 var new_width = ratio_extension*ratio_w_h ; // change the ratio_extension here to have the object closer or further
                 var new_height = new_width/ratio_w_h;
                 
-                camera = new THREE.OrthographicCamera(new_width / - 2, new_width / 2, new_height / 2,  new_height / - 2, 1, 5000 );
+                camera = new THREE.OrthographicCamera(new_width / - 2, new_width / 2, new_height / 2,  new_height / - 2, 1, 20);
 
                 camera.position.z = 4;
 
@@ -169,7 +169,7 @@
                 console.log(OBJLoader);
                 loader = new OBJLoader();
                 // in the next line, I upload the object itself by using the variable which will be defined in the structure page.
-                loader.load("model.obj?empty_cache=1", function(root) {
+                loader.load("model.obj", function(root) {
                     console.log(root)
                     scene.add(root);
                     animate()
