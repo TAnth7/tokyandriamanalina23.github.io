@@ -94,38 +94,42 @@ nav {
     background-color: #2e2e2e;
 }
 
-/* containers */
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.container_details_and_picture {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
 /* welcome */
 .links {
     text-decoration: none;
     color: #2d66f1;
 }
 
-/* The next two are for the details and picture, again */
-.details {
-    padding-left: 10%;
+/* The next things are for the details and picture */
+#container_details_and_picture {
+    padding-top: 70px; /* to avoid the nav bar */
+    display: flex;           /* Enable flexbox */
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: center; /* Centre vertically */
+    align-items: center;     /* Centre horizontally */
+    height: fit-content;
+    width: 100%;             /* Full width */
 }
 
-.picture {
-    padding-right: 15%;
+#my_profile_img {
+    border-radius: 10px;
 }
 
-.details ul li {
-    text-decoration: none;
-    padding: 0 5% 0 0;
-    list-style: none;
+#contact_icons {
+    width: 300px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* description text */
+
+.description_text {
+    padding: 5%;
+}
+
+.listing_in_text {
+    padding: 0 0 0 5%;
 }
 
 /* News */
@@ -141,15 +145,6 @@ nav {
 .news_link{
     text-decoration: none;
     color: 	#2d66f1;
-}
-
-/* description text */
-.description_text {
-    padding: 10%;
-}
-
-.listing_in_text {
-    padding: 0 0 0 5%;
 }
 
 /* 3D model */
@@ -170,6 +165,12 @@ nav {
 
 #list_of_papers {
     padding: 0 0 0 10%;
+}
+
+.container_table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #table_workshop_course {
@@ -207,29 +208,13 @@ nav {
   /* mobile version */
   @media only screen and (max-width: 600px) {
 
-    .wrapper {
+   /* .wrapper {
         width: 80%;
-    }
-
-    /* containers */
-    .container {
-        width: 80%;
-        display: block;
-    }
-
-    .container_details_and_picture {
-    width: 590px;
-    display: flex;
     }
 
     /* welcome */
-    .details {
-        width: 570px;
-        padding: 20px;
-     }
-
-    .picture {
-    padding-right: 20px;
+    #container_details_and_picture {
+        width: 590px;
     }
 
     /* description text */
@@ -254,6 +239,11 @@ nav {
     }
 
     /* table for workshops*/
+    .container_table {
+        width: 80%;
+        display: block;
+    }
+
     #table_workshop_course {
         border-collapse: collapse;
         width: 600px;
