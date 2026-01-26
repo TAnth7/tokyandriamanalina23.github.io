@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    height: 100%;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* wrapper */
+.wrapper {
+    position: relative; /* Added */
+    width: 100%;
+    height: 100%;
+}
+
+/* navigation bar */
+nav {
+    top: 0;
+    width: 100% ;
+    height: 60px;
+    background-color: 	#000000 ;
+    position: fixed;
+    z-index: 100000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#btn-toggle-nav {
+    width: 60px;
+    height: 100%;
+    background-image: url(images/hamburger_button.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    cursor: pointer;
+}
+
+#title_he {
+    color: white;
+    padding: 15px; 
+}
+
+.header_links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_links li {
+    list-style: none;
+}
+
+.header_links li a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 0 20px 0 0;
+    line-height: 60px; /* This should be the same as the height of the header*/
+}
+
+/* hamburger menu */
+.nav-sidebar {
+    visibility: hidden;
+    position: fixed; /* Changed from float */
+}
+
+.nav-sidebar ul {
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.nav-sidebar ul li {
+    list-style: none;
+}
+
+.nav-sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 0 20px;
+    line-height: 60px; /* This should be the same as the height of the header*/
+    white-space: nowrap;
+    opacity: 0;
+    transition: all  0.1s ease-in-out;
+}
+
+.nav-sidebar ul li a:hover {
+    background-color: #2e2e2e;
+}
+
+/* welcome */
+.links {
+    text-decoration: none;
+    color: #2d66f1;
+}
+
+/* The next things are for the details and picture */
+#container_details_and_picture {
+    padding-top: 70px; /* to avoid the nav bar */
+    display: flex;           /* Enable flexbox */
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: center; /* Centre vertically */
+    align-items: center;     /* Centre horizontally */
+    height: fit-content;
+    width: 100%;             /* Full width */
+}
+
+#my_profile_img {
+    border-radius: 10px;
+}
+
+#contact_icons {
+    width: 300px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* description text */
+
+.description_text {
+    padding: 5%;
+}
+
+.listing_in_text {
+    padding: 0 0 0 5%;
+}
+
+/* News */
+#news_box{
+    width: 400px;
+    height: fit-content;
+    padding: 20px;
+    border: #72757d;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+.news_link{
+    text-decoration: none;
+    color: 	#2d66f1;
+}
+
+/* 3D model */
+.container_rot_mod {
+    display: flex;
+    justify-content: center;
+}
+
+.rot_mod {
+    padding: 15px;
+}
+
+/* Research page*/
+.h3_title {
+    padding: 0 0 0 30px;
+}
+
+
+#list_of_papers {
+    padding: 0 0 0 10%;
+}
+
+.container_table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#table_workshop_course {
+    border-collapse: collapse;
+    width: 90%;
+  }
+  
+#table_workshop_course td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+  }
+
+  .research_link{
+    text-decoration: none;
+    color: 	#2d66f1;
+  }
+
+
+/* Gallery */
+.container_all_images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image_container {
+    text-align: center;
+    margin: 20px auto; /* Center the container horizontally and add margin */
+}
+
+
+/* Privacy Policy */
+
+#privacy_policy_container {
+    padding: 80px 5% 5% 5%;
+    width: 80%;
+}
+
+/* Responsive website */
+
+  /* mobile version */
+  @media only screen and (max-width: 600px) {
+
+   /* .wrapper {
+        width: 80%;
+    } */
+
+    /* navigation bar */
+    
+    #title_he {
+        font-size: 18px;
+        padding: 20px 10px 10px 10px; 
+    }
+
+    /* welcome */
+    #container_details_and_picture {
+        width: 590px;
+    }
+
+    /* description text */
+    .description_text {
+        width: 570px;
+        padding: 20px;
+    }
+
+    .listing_in_text {
+        padding: 0 0 0 30px;
+    }
+
+    /* 3D model */
+    .container_rot_mod {
+        width: 600px;
+    }
+
+    /* Research page*/
+    #list_of_papers {
+        width: 570px;
+        padding: 0 0 0 10%;
+    }
+
+    /* table for workshops*/
+    .container_table {
+        width: 80%;
+        display: block;
+    }
+
+    #table_workshop_course {
+        border-collapse: collapse;
+        width: 600px;
+        padding: 10px;
+    }
+  }
+
+
+  

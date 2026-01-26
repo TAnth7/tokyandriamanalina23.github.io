@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+        
+    <!-- Latex and MathJax settings -->
+    <script id="MathJax-script"
+    src="javascript_files/MathJax-3.2.2/es5/tex-mml-chtml.js">
+    </script>
+
+    <title> Home </title>
+</head>
+
+<body>
+
+<div class="wrapper"> <!--  The wrapper is used to make the side bar floating over the contents of the page -->
+
+    <header>
+        <nav>
+            <div id="btn-toggle-nav" onclick="toggleNav()"></div>
+            <h1 id="title_he"> Toky Andriamanalina </h1>
+        </nav>
+
+        <aside class="nav-sidebar">
+            <ul>
+                <li> <a href="./"> HOME </a> </li>
+                <li> <a href="./research"> RESEARCH </a>  </li>
+                <li> <a href="./gallery"> GALLERY </a>  </li>
+                <li> <a href="./privacy"> PRIVACY </a>  </li>
+            </ul>
+        </aside>
+    </header>
+        
+    <main>
+        <div id='container_details_and_picture'>
+            <h1>👋 Toky, a mathematician.</h1>
+
+            <br><br>
+
+            
+            <img src="images/photo.jpg" id='my_profile_img' width='200px'>
+        
+            
+            <div id='contact_icons'>
+                <div>
+                    <a href="https://github.com/TAnth7" target="_blank" class="icon">
+                    <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        aria-hidden="true"
+                        focusable="false"
+                        style="width:24px;height:24px;display:block;overflow:visible;"
+                    >
+                        <path
+                            d="M12 0.3C5.4 0.3 0 5.7 0 12.3c0 5.3 3.4 9.8 8.2 11.4
+                            0.6 0.1 0.8-0.3 0.8-0.6v-2c-3.3 0.7-4-1.6-4-1.6
+                            -0.5-1.2-1.2-1.6-1.2-1.6-1-0.7 0.1-0.7 0.1-0.7
+                            1.1 0.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.2 0.9
+                            0.1-0.7 0.4-1.2 0.7-1.5-2.6-0.3-5.3-1.3-5.3-5.8
+                            0-1.3 0.5-2.4 1.2-3.3 -0.1-0.3-0.5-1.6 0.1-3.3
+                            0 0 1-0.3 3.4 1.2A11.7 11.7 0 0 1 12 6.5
+                            c1 0 2.1 0.1 3.1 0.4 2.4-1.6 3.4-1.2 3.4-1.2
+                            0.6 1.7 0.2 3 0.1 3.3 0.8 0.9 1.2 2 1.2 3.3
+                            0 4.5-2.7 5.5-5.3 5.8 0.4 0.3 0.8 1 0.8 2.1v3.1
+                            c0 0.3 0.2 0.7 0.8 0.6C20.6 22.1 24 17.6 24 12.3
+                            24 5.7 18.6 0.3 12 0.3z"
+                            fill="black"
+                        />
+                    </svg>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://linkedin.com/in/toky-andriamanalina-841b4a280" target="_blank" class="icon">
+                    <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        focusable="false"
+                        style="width:24px;height:24px;display:block;overflow:visible;"
+                    >
+                        <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.79v2.24h.07c.67-1.27 2.3-2.61 4.73-2.61 5.06 0 6 3.34 6 7.68V24h-5v-6.85c0-1.63-.03-3.72-2.27-3.72-2.28 0-2.63 1.78-2.63 3.61V24h-5V8z"
+                        fill="black"
+                        />
+                    </svg>
+                    </a>
+                </div>            
+
+                <div>
+                    <button id="copyEmailButton" style="background: none; border: none; cursor: pointer; padding: 0;">
+                    <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        focusable="false"
+                        style="width:24px;height:24px;display:block;overflow:visible;"
+                    >
+                        <path d="M12 13.065L0 4.5V19.5H24V4.5L12 13.065ZM12 11L24 2.5H0L12 11Z" fill="black"/>
+                    </svg>
+                    </button>
+                </div>
+            </div>
+        
+            <br> QR code to share this website easily: <br>
+                <img src="images/qrcode_this_site.png" width="150px" >
+        </div>
+
+        
+        <div class="description_text">
+        I am currently a PhD student in Applied Geometry and Topology at the University of Potsdam in Germany. My research is conducted under the supervision of <a class='links' href="https://www.math.uni-potsdam.de/professuren/applied-geometry-and-topology/team/prof-dr-myfanwy-evans/" target="_blank">Prof Dr Myfanwy Evans</a> and <a class='links' href="https://www.wpi-aimr.tohoku.ac.jp/mathematics_unit/english/member/member_sonia.html" target="_blank"> Dr Sonia Mahmoudi</a>.
+        <br>
+        I completed both my Bachelor's and <a class='links' href="https://mathinfo.unistra.fr/en/courses/mpa-mathematics-magisterium/mathematics-magisterium/" target="_blank">Magisterium</a> degrees at the University of Strasbourg, followed by a Master's degree at the University of Rennes 1 in France. While Potsdam serves as my primary research base, I also spent a research period at the Advanced Institute for Materials Research (AIMR) at Tohoku University in Japan.
+
+        <br><br>
+        My PhD project is about developing geometric and topological tools to help materials scientists describe and quantify entanglement in crystalline (3&#8209;periodic) materials.
+        Alongside my research, I also tutor students in the use of various software programmes (such as Houdini/SideFX) to model and explore biophysical systems.
+
+        <br><br>
+        Areas of interest and expertise:
+
+        <ul class='listing_in_text'> 
+            <li>Topology, geometry, algebra</li> 
+            <li>Geometric and topological computational modelling, visualisation and analysis</li>
+            <li>Knot theory, entanglements and weavings</li>
+            <li>Interdisciplinary collaboration with materials science</li>
+        </ul>
+
+        <br>
+        Besides my PhD work, I often attend or organise <a class='links' href="./research#table_workshop_course">conferences, workshops, and courses</a>.
+
+        <br><br>
+        Skills:
+        <ul class='listing_in_text'> 
+            <li><strong>Languages:</strong> Malagasy (mother tongue), French (fluent), English (excellent command), German (basic communication skills).</li>
+            <li><strong>Typesetting:</strong> <span style="font-family:serif;">\(\LaTeX\).</span></li>
+            <li><strong>Numerical computing:</strong> Python.</li>
+            <li><strong>Front-end development:</strong> HTML, CSS.</li>
+            <li><strong>Back-end development:</strong> PHP, SQL.</li>
+            <li><strong>3D modelling:</strong> Houdini.</li> </ul>
+        </ul>
+
+        <!-- <br><br>
+        <div id="news_box">
+            News: <br><br>
+            I am currently co-organising the following workshop (28/04/2025): 
+        <a class="news_link" href="https://sites.google.com/view/berlin-brandenburg-workshop-v/home">Berlin-Brandenburg Workshop V: Knot Theory and its Application.</a> 
+        </div> -->
+        </div>
+
+    </main>
+    
+</div>
+
+<!-- these are placed at the end of the body to make sure the page loads faster -->
+    <script src="javascript_files/hamburger_menu.js"></script>
+    <script src="javascript_files/page_refresher.js"></script>
+    <script src="javascript_files/copy_email_button.js"></script>
+</body>
+</html>
