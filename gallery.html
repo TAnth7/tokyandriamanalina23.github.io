@@ -17,54 +17,43 @@
 
 <body>
 
-<div class="wrapper">
+<header>
+    <nav>
+        <div id="btn-toggle-nav" onclick="toggleNav()"></div>
+        <h1 id="title_he"> Toky Andriamanalina </h1>
+    </nav>
 
-    <header>
-        <nav>
-          <div id="btn-toggle-nav" onclick="toggleNav()"></div>
-          <h1 id="title_he"> Toky Andriamanalina </h1>
-        </nav>
+    <aside class="nav-sidebar">
+        <ul>
+            <li> <a href="./"> HOME </a> </li>
+            <li> <a href="./research"> RESEARCH </a>  </li>
+            <li> <a href="./gallery"> GALLERY </a>  </li>
+        </ul>
+    </aside>
+</header>
+  
+<main>
+    <div class="image_container">
+        Parametric design model made with <a class="links" href="https://www.rhino3d.com/">Rhino + Grasshopper</a>. <br>
+        Credits: Materials Design, Design methods for materials scientists, IMPRS, Max Planck Institute of Colloids and Interfaces, Prof Dr Karola Dierichs, Pelin Asa MSc.
+        <br>
+        <img class="gallery_image" src="images/cloth_weaving.gif">
+    </div>
 
-        <aside class="nav-sidebar">
-            <ul>
-                <li> <a href="./"> HOME </a> </li>
-                <li> <a href="./research"> RESEARCH </a>  </li>
-                <li> <a href="./gallery"> GALLERY </a>  </li>
-            </ul>
-        </aside>
-    </header>
-      
-    <main>
-        
-        <div class="container_all_images">
-          <div class="image_container">
-            Parametric design model made with <a class="links" href="https://www.rhino3d.com/">Rhino + Grasshopper</a>. <br>
-              Credits: Materials Design, Design methods for materials scientists, IMPRS, Max Planck Institute of Colloids and Interfaces, Prof Dr Karola Dierichs, Pelin Asa MSc.
-            <br>
-            <img src="images/cloth_weaving.gif" width="600px">
-          </div>
+    <div class="image_container">
+        "Ice mould" made out of rice paper. <br>
+        Credits: Materials Design, Design methods for materials scientists, IMPRS, Max Planck Institute of Colloids and Interfaces, Prof Dr Karola Dierichs, Pelin Asa MSc.
+        <br>
+        <img class="gallery_image" src="images/rice_paper.jpg">
+    </div>
 
-          <br><br>
-
-          <div class="image_container">
-            "Ice mould" made out of rice paper. <br>
-              Credits: Materials Design, Design methods for materials scientists, IMPRS, Max Planck Institute of Colloids and Interfaces, Prof Dr Karola Dierichs, Pelin Asa MSc.
-            <br>
-            <img src="images/rice_paper.jpg" width="600px">
-          </div>
-
-          <br><br>
-
-          <div class="image_container">
-            Foam-like structure made out of beeswax. <br>
-              Credits: Materials Design, Design methods for materials scientists, IMPRS, Max Planck Institute of Colloids and Interfaces, Prof Dr Karola Dierichs, Pelin Asa MSc.
-            <br>
-            <img src="images/beeswax.jpg" width="600px">
-          </div>
-        </div>
-    </main>
-
-</div>
+    <div class="image_container">
+        Foam-like structure made out of beeswax. <br>
+        Credits: Materials Design, Design methods for materials scientists, IMPRS, Max Planck Institute of Colloids and Interfaces, Prof Dr Karola Dierichs, Pelin Asa MSc.
+        <br>
+        <img class="gallery_image" src="images/beeswax.jpg">
+    </div>
+</main>
 
 <footer>
     <a href="./privacy"> Privacy Policy </a>
