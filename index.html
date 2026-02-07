@@ -3,19 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style.css">
-        
-    <!-- Latex and MathJax settings -->
-    <script id="MathJax-script"
-    src="javascript_files/MathJax-3.2.2/es5/tex-mml-chtml.js">
-    </script>
-
-    <title> Home </title>
     <meta name="description" content="Personal website of Toky Andriamanalina, a mathematician at the University of Potsdam">
     <meta name="author" content="Toky Andriamanalina">
     <meta name="permissions-policy" content="geolocation=(), microphone=(), camera=(), usb=()">
     <meta name="referrer-policy" content="no-referrer">
+
+    <link rel="stylesheet" href="style.css">
+        
+    <script id="MathJax-script"
+        src="javascript/MathJax-3.2.2/es5/tex-mml-chtml.js">
+    </script>
+
+    <title> Home </title>
 </head>
 
 <body>
@@ -33,13 +32,12 @@
                 <li> <a href="./"> HOME </a> </li>
                 <li> <a href="./research"> RESEARCH </a>  </li>
                 <li> <a href="./gallery"> GALLERY </a>  </li>
-                <li> <a href="./privacy"> PRIVACY </a>  </li>
             </ul>
         </aside>
     </header>
         
     <main>
-        <div id='container_details_and_picture'>
+        <section id='container_details_and_picture'>
             <h1>👋 Toky, a mathematician.</h1>
 
             <br><br>
@@ -48,7 +46,7 @@
             <img src="images/photo.jpg" id='my_profile_img' width='200px'>
         
             
-            <div id='contact_icons'>
+            <section id='contact_icons'>
                 <div>
                     <a href="https://github.com/TAnth7" target="_blank" class="icon">
                     <svg
@@ -106,61 +104,76 @@
                     </svg>
                     </button>
                 </div>
-            </div>
+            </section>
         
             <br> QR code to share this website easily: <br>
                 <img src="images/qrcode_this_site.png" width="150px" >
-        </div>
+        </section>
 
         
-        <div class="description_text">
-        I am currently a PhD student in Applied Geometry and Topology at the University of Potsdam in Germany. My research is conducted under the supervision of <a class='links' href="https://www.math.uni-potsdam.de/professuren/applied-geometry-and-topology/team/prof-dr-myfanwy-evans/" target="_blank">Prof Dr Myfanwy Evans</a> and <a class='links' href="https://www.wpi-aimr.tohoku.ac.jp/mathematics_unit/english/member/member_sonia.html" target="_blank"> Dr Sonia Mahmoudi</a>.
-        <br>
-        I completed both my Bachelor's and <a class='links' href="https://mathinfo.unistra.fr/en/courses/mpa-mathematics-magisterium/mathematics-magisterium/" target="_blank">Magisterium</a> degrees at the University of Strasbourg, followed by a Master's degree at the University of Rennes 1 in France. While Potsdam serves as my primary research base, I also spent a research period at the Advanced Institute for Materials Research (AIMR) at Tohoku University in Japan.
+        <section class="description_text">
+            <p>
+                I am currently a PhD student in Applied Geometry and Topology at the University of Potsdam in Germany. My research is conducted under the supervision of <a class='links' href="https://www.math.uni-potsdam.de/professuren/applied-geometry-and-topology/team/prof-dr-myfanwy-evans/" target="_blank">Prof Dr Myfanwy Evans</a> and <a class='links' href="https://www.wpi-aimr.tohoku.ac.jp/mathematics_unit/english/member/member_sonia.html" target="_blank"> Dr Sonia Mahmoudi</a>.
+            </p><br>
 
-        <br><br>
-        My PhD project is about developing geometric and topological tools to help materials scientists describe and quantify entanglement in crystalline (3&#8209;periodic) materials.
-        Alongside my research, I also tutor students in the use of various software programmes (such as Houdini/SideFX) to model and explore biophysical systems.
+            <p>
+                I completed both my Bachelor's and <a class='links' href="https://mathinfo.unistra.fr/en/courses/mpa-mathematics-magisterium/mathematics-magisterium/" target="_blank">Magisterium</a> degrees at the University of Strasbourg, followed by a Master's degree at the University of Rennes 1 in France. While Potsdam serves as my primary research base, I also spent a research period at the Advanced Institute for Materials Research (AIMR) at Tohoku University in Japan.
+            </p>
+            
 
-        <br><br>
-        Areas of interest and expertise:
+            <br><br>
 
-        <ul class='listing_in_text'> 
-            <li>Topology, geometry, algebra</li> 
-            <li>Geometric and topological computational modelling, visualisation and analysis</li>
-            <li>Knot theory, entanglements and weavings</li>
-            <li>Interdisciplinary collaboration with materials science</li>
-        </ul>
+            <p>
+                My PhD project is about developing geometric and topological tools to help materials scientists describe and quantify entanglement in crystalline (3&#8209;periodic) materials.
+                Alongside my research, I also tutor students in the use of various software programmes (such as Houdini/SideFX) to model and explore biophysical systems.
+            </p>
+            
 
-        <br>
-        Besides my PhD work, I often attend or organise <a class='links' href="./research#table_workshop_course">conferences, workshops, and courses</a>.
+            <br><br>
 
-        <br><br>
-        Skills:
-        <ul class='listing_in_text'> 
-            <li><strong>Languages:</strong> Malagasy (mother tongue), French (fluent), English (excellent command), German (basic communication skills).</li>
-            <li><strong>Typesetting:</strong> <span style="font-family:serif;">\(\LaTeX\).</span></li>
-            <li><strong>Numerical computing:</strong> Python.</li>
-            <li><strong>Front-end development:</strong> HTML, CSS.</li>
-            <li><strong>Back-end development:</strong> PHP, SQL.</li>
-            <li><strong>3D modelling:</strong> Houdini.</li> </ul>
-        </ul>
+            <section>
+                Areas of interest and expertise:
 
-        <!-- <br><br>
-        <div id="news_box">
-            News: <br><br>
-            I am currently co-organising the following workshop (28/04/2025): 
-        <a class="news_link" href="https://sites.google.com/view/berlin-brandenburg-workshop-v/home">Berlin-Brandenburg Workshop V: Knot Theory and its Application.</a> 
-        </div> -->
-        </div>
+                <ul class='listing_in_text'> 
+                    <li>Topology, geometry, algebra</li> 
+                    <li>Geometric and topological computational modelling, visualisation and analysis</li>
+                    <li>Knot theory, entanglements and weavings</li>
+                    <li>Interdisciplinary collaboration with materials science</li>
+                </ul>
+            </section>
+
+            <br>
+
+            <p>
+                Besides my PhD work, I often attend or organise <a class='links' href="./research#table_workshop_course">conferences, workshops, and courses</a>.
+            </p>
+            
+            <br><br>
+
+            <section>
+                Skills:
+                <ul class='listing_in_text'> 
+                    <li><b>Languages:</b> Malagasy (mother tongue), French (fluent), English (excellent command), German (basic communication skills).</li>
+                    <li><b>Typesetting:</b> <span style="font-family:serif;">\(\LaTeX\).</span></li>
+                    <li><b>Numerical computing:</b> Python.</li>
+                    <li><b>Front-end development:</b> HTML, CSS.</li>
+                    <li><b>Back-end development:</b> PHP, SQL.</li>
+                    <li><b>3D modelling:</b> Houdini.</li> </ul>
+                </ul>
+            </section>
+        </section>
 
     </main>
     
 </div>
 
+<footer>
+    <a href="./privacy"> Privacy Policy </a>
+</footer>
+
 <!-- these are placed at the end of the body to make sure the page loads faster -->
-    <script src="javascript_files/hamburger_menu.js"></script>
-    <script src="javascript_files/page_refresher.js"></script>
-    <script src="javascript_files/copy_email_button.js"></script>
+    <script src="javascript/hamburger_menu.js"></script>
+    <script src="javascript/page_refresher.js"></script>
+    <script src="javascript/copy_email_button.js"></script>
 </body>
 </html>

@@ -10,6 +10,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+    padding-top: 90px; /* to avoid the nav bar */
+    height: 100%;
+}
+
 /* wrapper */
 .wrapper {
     position: relative; /* Added */
@@ -24,10 +29,11 @@ nav {
     height: 60px;
     background-color: 	#000000 ;
     position: fixed;
-    z-index: 100000;
+    z-index: 500;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 #btn-toggle-nav {
@@ -42,7 +48,8 @@ nav {
 
 #title_he {
     color: white;
-    padding: 15px; 
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .header_links {
@@ -94,7 +101,26 @@ nav {
     background-color: #2e2e2e;
 }
 
-/* welcome */
+/* -- Footer -- */
+
+footer {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    margin-top: 80px;
+    border-top: 1px solid black;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    margin-left: 40px;
+}
+
+/* --- Welcome --- */
+
 .links {
     text-decoration: none;
     color: #2d66f1;
@@ -102,7 +128,6 @@ nav {
 
 /* The next things are for the details and picture */
 #container_details_and_picture {
-    padding-top: 70px; /* to avoid the nav bar */
     display: flex;           /* Enable flexbox */
     flex-direction: column;  /* Stack items vertically */
     justify-content: center; /* Centre vertically */
@@ -129,22 +154,8 @@ nav {
 }
 
 .listing_in_text {
-    padding: 0 0 0 5%;
-}
-
-/* News */
-#news_box{
-    width: 400px;
-    height: fit-content;
-    padding: 20px;
-    border: #72757d;
-    border-radius: 20px;
-    border-style: solid;
-}
-
-.news_link{
-    text-decoration: none;
-    color: 	#2d66f1;
+    padding: 0 0 0 30px;
+    list-style-type: circle;
 }
 
 /* 3D model */
@@ -157,7 +168,8 @@ nav {
     padding: 15px;
 }
 
-/* Research page*/
+/* ---- Research page ---- */
+
 .h3_title {
     padding: 0 0 0 30px;
 }
@@ -203,7 +215,7 @@ nav {
 }
 
 
-/* Privacy Policy */
+/* ---- Privacy Policy ---- */
 
 #privacy_policy_container {
     padding: 80px 5% 5% 5%;

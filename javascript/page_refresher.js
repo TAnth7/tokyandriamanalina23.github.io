@@ -17,7 +17,7 @@ function handleOrientationChange(event) {
 
 // Add listener for orientation change
 var mqlPortrait = window.matchMedia("(orientation: portrait)");
-var lastOrientation = mqlPortrait.matches ? 'portrait' : 'landscape'; // Initialize lastOrientation
+var lastOrientation = mqlPortrait.matches ? 'portrait' : 'landscape'; // Initialise lastOrientation
 mqlPortrait.addEventListener('change', handleOrientationChange);
 
 // Initial check for orientation on page load
