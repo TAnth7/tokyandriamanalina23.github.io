@@ -160,14 +160,10 @@ footer a {
     list-style-type: circle;
 }
 
-/* 3D model */
-.container_rot_mod {
-    display: flex;
-    justify-content: center;
-}
+/* -- 3D model -- */
 
-.rot_mod {
-    padding: 15px;
+#extended_tangle {
+    padding: 20px;
 }
 
 /* ---- Research page ---- */
