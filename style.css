@@ -149,10 +149,14 @@ footer a {
     justify-content: space-between;
 }
 
-/* description text */
+/* --- description text --- */
 
 .description_text {
     padding: 5%;
+}
+
+.description_text p {
+    margin: 10px 0 10px 0;
 }
 
 .listing_in_text {
